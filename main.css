@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+#bg {
+  position: relative;
+  /* background-image: url(./src/image/bg.png); */
+  /* background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; */
+  height: 100%;
+}
+
+#wrap {
+  /* position: absolute; */
+  object-fit: contain;
+  width: 100%;
+  object-fit: contain;
+}
+
+.naver {
+  position: absolute;
+  left: 13.5vw;
+  top: 10.5vw;
+  display: inline-block;
+  height: 9vw;
+  width: 9vw;
+  z-index: 5;
+  /* background: red; */
+  background: green;
+}
+
+.daum {
+  position: absolute;
+  left: 50.5vw;
+  top: 10.5vw;
+  display: inline-block;
+  height: 9vw;
+  width: 9vw;
+  z-index: 5;
+  background: red;
+}
+
+.google {
+  position: absolute;
+  left: 30.5vw;
+  top: 20.5vw;
+  display: inline-block;
+  height: 9vw;
+  width: 9vw;
+  z-index: 5;
+  background: yellowgreen;
+}
+
+.google::after {
+  content: "im google";
+  position: absolute;
+  top: -2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: .3rem .5rem;
+  white-space: nowrap;
+}
+
+.pieces:hover {
+  /* box-shadow: 0 0 1rem 0 red; */
+  background: rgba(249, 132, 132, 0.529);
+}
+
+#user {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  position: absolute;
+  background-image: url(./src/image/user.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 10;
+}
